@@ -1,0 +1,388 @@
+.track-sopir {
+    position: relative;
+    width: 100%;
+    height: 556px;
+    background: $dark-grey2;
+    .img-full {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        top: 16px;
+        left: 16px;
+        background: $grey;
+        border-radius: 5px;
+        img {
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            margin: 3px;
+        }
+    }
+}
+
+.track-sopir1 {
+    position: relative;
+    width: 100%;
+    height: 618px;
+    background: $dark-grey2;
+    .img-full {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        top: 16px;
+        left: 16px;
+        background: $grey;
+        border-radius: 5px;
+        img {
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            margin: 3px;
+        }
+    }
+}
+
+.sopir-track1 {
+    max-width: 400px;
+    height: 500px;
+    .scroll {
+        height: 100%;
+        overflow: auto;
+        .track-BerangkatKembali {
+            display: flex;
+            flex-direction: column;
+            .berangkat {
+                display: flex;
+                flex-direction: column;
+                p {
+                    font-weight: bold;
+                }
+                span {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: -14px;
+                    .img-kalender {
+                        position: relative;
+                        width: 12px;
+                        height: 12px;
+                        img {
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    p {
+                        font-size: 10px;
+                        color: rgba($color: $dark-grey2, $alpha: 0.6);
+                        margin-left: 7px;
+                    }
+                }
+            }
+            .perjalanan {
+                display: flex;
+                flex-wrap: wrap;
+                .waktu-tempuh {
+                    display: flex;
+                    flex-direction: column;
+                    p {
+                        font-size: 14px;
+                        color: rgba($color: $dark-grey2, $alpha: 0.8);
+                        &:nth-child(1) {
+                            margin-top: 50px;
+                        }
+                        &:nth-child(2) {
+                            margin-top: 50px;
+                        }
+                        &:nth-child(3) {
+                            margin-top: 50px;
+                        }
+                    }
+                }
+                .titik-tempuh {
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: 15px;
+                    .tempat-tempuh {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .titik {
+                            display: flex;
+                            flex-direction: column;
+                            span {
+                                position: relative;
+                                width: 20px;
+                                height: 20px;
+                                border-radius: 50%;
+                                &:last-child {
+                                    width: 2px;
+                                    height: 50px;
+                                    border: 1px dashed rgba($color: $dark-grey2, $alpha: 0.6);
+                                    margin-left: 9px;
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                        .tempat {
+                            display: flex;
+                            flex-direction: column;
+                            margin-left: 15px;
+                            p {
+                                font-size: 15px;
+                                font-weight: bold;
+                                &:last-child {
+                                    font-weight: normal;
+                                    font-size: 13px;
+                                    margin-top: -12px;
+                                    color: rgba($color: $dark-grey2, $alpha: 0.8);
+                                }
+                            }
+                        }
+                        .img-lokasi {
+                            position: relative;
+                            width: 30px;
+                            height: 30px;
+                            margin-left: -5px;
+                            img {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .lama-keberangkatan {
+                position: relative;
+                width: 350px;
+                height: 50px;
+                background: rgba($color: $grey, $alpha: 0.5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                padding-left: 15px;
+                padding-right: 15px;
+                p {
+                    margin-top: 13px;
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    &:last-child {
+                        font-size: 16px;
+                        font-weight: bold;
+                        text-transform: none;
+                        margin-left: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sopir-track {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .profil {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .img-profil {
+            position: relative;
+            width: 90px;
+            height: 90px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: 50px;
+            img {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .img-profil1 {
+            position: relative;
+            width: 90px;
+            height: 90px;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-top: -10px;
+            img {
+                position: absolute;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .text-profil {
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+            h4 {
+                line-height: 15px;
+                font-size: 22px;
+                font-weight: bold;
+                color: $blue;
+                text-transform: capitalize;
+                &:last-child {
+                    color: rgba($color: $blue, $alpha: 0.7);
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .tujuan {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        .pengguna-tujuan {
+            &:last-child {
+                margin-left: auto;
+                margin-right: 32px;
+            }
+            h4 {
+                font-size: 12px;
+                color: rgba($color: $blue, $alpha: 0.7);
+                &:last-child {
+                    font-size: 16px;
+                    color: $blue;
+                    margin-top: -8px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .waktu {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: -64px;
+        .span {
+            position: relative;
+            width: 20px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-left: -30px;
+            span {
+                position: relative;
+                margin-top: 2px;
+                margin-bottom: 2px;
+                background: $blue;
+                &:nth-child(1) {
+                    position: relative;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                }
+                &:nth-child(2) {
+                    position: relative;
+                    width: 2px;
+                    height: 55px;
+                    border-radius: 5px;
+                    background: rgba($color: $blue, $alpha: 0.7);
+                }
+                &:nth-child(3) {
+                    position: relative;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .waktu-BerangkatKembali {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            padding-bottom: -8px;
+            margin-top: -3px;
+            border-bottom: 1px solid rgba($color: $blue, $alpha: 0.7);
+            &:last-child {
+                padding-top: 15px;
+                padding-bottom: 0px;
+                border-top: 1px solid rgba($color: $blue, $alpha: 0.7);
+                border-bottom: none;
+            }
+            span {
+                display: flex;
+                flex-wrap: wrap;
+                h4 {
+                    font-size: 22px;
+                    font-weight: bold;
+                    color: $blue;
+                }
+                p {
+                    font-size: 12px;
+                    color: $blue;
+                    margin-top: 6px;
+                    font-weight: bold;
+                }
+                h5 {
+                    font-size: 13px;
+                    color: rgba($color: $blue, $alpha: 0.7);
+                    margin-top: 8px;
+                    margin-left: 80px;
+                }
+            }
+        }
+    }
+    .line-coklat {
+        position: relative;
+        width: 100%;
+        height: 1px;
+        background: $grey;
+        margin-left: -25px;
+        margin-bottom: 10px;
+    }
+    .penilaian-komentar {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .penilaian {
+            p {
+                font-weight: bold;
+            }
+            .jos {
+                display: flex;
+                flex-wrap: wrap;
+                .img-bintang {
+                    position: relative;
+                    width: 25px;
+                    height: 25px;
+                    margin-top: -10px;
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            textarea {
+                margin-top: -10px;
+                border-radius: 5px;
+                margin-bottom: -10px;
+            }
+        }
+    }
+}
+
+.m-track {
+    margin-top: 20px;
+    flex-direction: column;
+    margin-bottom: -35px;
+}
+
+.img-track-zoom-full {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: $dark-grey2;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}

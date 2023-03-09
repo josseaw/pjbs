@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>PJBS Web App | Kendaraan</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.min.css" />
+</head>
+
+<body>
+    <main>
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+            <img src="../assets/img/logo pjbs.png" alt="logo PJBS" class="brand__img" />
+            <nav class="navs">
+                <ul class="navs__list list-unstyled">
+                    <li class="navs__list-item">
+                        <a href="../mk_kendaraan.html" class="active" data-toggle="tooltip" data-placement="bottom" title="Modul Kendaraan"><img src="../assets/img/icons/kendaraan_biru.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../mr_rapat.html"><img src="../assets/img/icons/pemesanan_ruangan_rapat.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../matk_atk.html"><img src="../assets/img/icons/atk.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../mf_fasilitas.html"><img src="../assets/img/icons/perbaikan_fasilitas.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../mars_arsip.html"><img src="../assets/img/icons/arsip.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../minv_inventaris.html"><img src="../assets/img/icons/inventaris.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../ms_survey.html"><img src="../assets/img/icons/survey.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../mem_meeting.html"><img src="../assets/img/icons/e-meeting.png" class="icn_menu" /></a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- END SIDEBAR -->
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <form class="d-inline-block ml-0 ml-xl-4 mr-3">
+                            <div class="input-group input-group--custom">
+                                <input type="text" class="form-control" placeholder="Cari..." />
+                                <div class="input-group-append--custom mb-3">
+                                    <button class="btn btn-primary" type="button">
+                      <img
+                        src="../assets/img/icons/search_putih.png"
+                        class="topbar__search-icn"
+                      />
+                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="date mb-3">
+                            <p class="mb-0 small">
+                                <span>11:46 WIB </span> <span>17 Sept 2020</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 text-md-right ml-4 ml-md-0">
+                        <div class="d-flex">
+                            <div class="d-flex ml-auto">
+                                <div class="btn-group ml-auto">
+                                    <a type="button" class="topbar__icn" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="7,7">
+                                        <img src="../assets/img/icons/notifikasi.png" class="img-fluid" />
+                                    </a>
+                                    <div class="dropdown-menu jos" aria-labelledby="dropdownMenuReference">
+                                        <span class="dropdown-item-text text-center">Notifikasi <span>2</span></span>
+                                        <div class="dropdown-line"></div>
+                                        <div class="dropdown-list">
+                                            <div class="scroll">
+                                                <a href="#">
+                                                    <div class="list-drop bg-blue-rgba">
+                                                        <div class="img-notifikasi bg-white">
+                                                            <img src="../assets/img/icons/jadawal-list.png" alt="">
+                                                        </div>
+                                                        <div class="content-notifikasi">
+                                                            <p>Pemesanan kendaraan menunggu persetujuan anda</p>
+                                                            <p>14:00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="list-drop bg-blue-rgba">
+                                                        <div class="img-notifikasi bg-white">
+                                                            <img src="../assets/img/icons/notif_user_biru.png" alt="">
+                                                        </div>
+                                                        <div class="content-notifikasi">
+                                                            <p>Pemesanan kendaraan menunggu persetujuan anda</p>
+                                                            <p>14:00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="list-drop bg-white">
+                                                        <div class="img-notifikasi bg-blue-asli">
+                                                            <img src="../assets/img/icons/notif_approval.png" alt="">
+                                                        </div>
+                                                        <div class="content-notifikasi">
+                                                            <p>Pemesanan kendaraan menunggu persetujuan anda</p>
+                                                            <p>14:00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="list-drop bg-white">
+                                                        <div class="img-notifikasi bg-blue-asli">
+                                                            <img src="../assets/img/icons/notif_user.png" alt="">
+                                                        </div>
+                                                        <div class="content-notifikasi">
+                                                            <p>Pemesanan kendaraan menunggu persetujuan anda</p>
+                                                            <p>14:00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group ml-auto">
+                                    <span type="button" class="dropdown-toggle account--toggle" id="dropdownMenuProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="7,7">
+                                        <img src="https://placeimg.com/35/35/people" class="rounded-circle" />
+                                    </span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END TOPBAR -->
+
+        <!-- MAIN -->
+        <div class="content">
+            <div class="col-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="../mk_kendaraan.html">Kendaraan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center active" href="sopir.html">Sopir</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="persetujuan.html">Persetujuan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center" href="pemesanan.html">Pemesanan</a>
+                    </li>
+                </ul>
+                <div class="card border-0 w-100 px-2 py-3" id="link-detail">
+                    <div class="container-fluid">
+                        <div class="row d-flex justify-content-between">
+                            <button class="btn btn-plus py-1 px-2 mb-3 mb-sm-0" data-toggle="modal" data-target="#modalAddSopir">+ Tambah Sopir</button>
+                            <div class="filter d-flex flex-row"><button class="btn btn-filter py-1 px-3 d-flex flex-row">    <img src="../assets/img/icons/filter_biru.png" alt="Filter" class="img-fluid mr-2"/>    <span>Filter</span></button>
+                                <form class="ml-4">
+                                    <div class="input-group input-group--custom"> <input type="text" class="form-control" placeholder="Cari..." />
+                                        <div class="input-group-append--custom"> <button class="btn btn-primary" type="button"><img src="../assets/img/icons/search_putih.png" class="topbar__search-icn"/></button></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <section class="table-responnsive mt-4">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><button class="btn btn-minus">&minus;</button></th>
+                                    <th scope="col">NID</th>
+                                    <th scope="col">Nama Sopir</th>
+                                    <th scope="col">Rekam Jejak Kerja Sopir</th>
+                                    <th scope="col">Nomer Polisi</th>
+                                    <th scope="col">Rata-rata Penilaian</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="check" data-toggle="collapse" data-target="#multiCollapseExample">
+                                        <div class="checkbox"><input type="checkbox" id="checkbox" aria-label="Checkbox for following text input" /><label for="checkbox"></label></div>
+                                    </td>
+                                    <td>SP000</td>
+                                    <td>Delvin Smith</td>
+                                    <td>1 Pesanan / 16 jam</td>
+                                    <td>L1184WN</td>
+                                    <td class="d-flex mx-1">
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang_kosong.png" alt=""></div>
+                                    </td>
+                                    <td><span class="aktif">Aktif</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="check" data-toggle="collapse" data-target="#multiCollapseExample1">
+                                        <div class="checkbox"><input type="checkbox" id="checkbox1" aria-label="Checkbox for following text input" /><label for="checkbox1"></label></div>
+                                    </td>
+                                    <td>SP000</td>
+                                    <td>Delvin Smith</td>
+                                    <td>1 Pesanan / 16 jam</td>
+                                    <td>L1184WN</td>
+                                    <td class="d-flex mx-1">
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang_kosong.png" alt=""></div>
+                                    </td>
+                                    <td><span class="aktif">Aktif</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="check" data-toggle="collapse" data-target="#multiCollapseExample2">
+                                        <div class="checkbox"><input type="checkbox" id="checkbox2" aria-label="Checkbox for following text input" /><label for="checkbox2"></label></div>
+                                    </td>
+                                    <td>SP000</td>
+                                    <td>Delvin Smith</td>
+                                    <td>1 Pesanan / 16 jam</td>
+                                    <td>L1184WN</td>
+                                    <td class="d-flex mx-1">
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang_kosong.png" alt=""></div>
+                                    </td>
+                                    <td><span class="aktif">Aktif</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="check" data-toggle="collapse" data-target="#multiCollapseExample3">
+                                        <div class="checkbox"><input type="checkbox" id="checkbox3" aria-label="Checkbox for following text input" /><label for="checkbox3"></label></div>
+                                    </td>
+                                    <td>SP000</td>
+                                    <td>Delvin Smith</td>
+                                    <td>1 Pesanan / 16 jam</td>
+                                    <td>L1184WN</td>
+                                    <td class="d-flex mx-1">
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang_kosong.png" alt=""></div>
+                                    </td>
+                                    <td><span class="aktif">Aktif</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="check" data-toggle="collapse" data-target="#multiCollapseExample4">
+                                        <div class="checkbox"><input type="checkbox" id="checkbox4" aria-label="Checkbox for following text input" /><label for="checkbox4"></label></div>
+                                    </td>
+                                    <td>SP000</td>
+                                    <td>Delvin Smith</td>
+                                    <td>1 Pesanan / 16 jam</td>
+                                    <td>L1184WN</td>
+                                    <td class="d-flex mx-1">
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang_kosong.png" alt=""></div>
+                                    </td>
+                                    <td><span class="aktif">Aktif</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="check" data-toggle="collapse" data-target="#multiCollapseExample5">
+                                        <div class="checkbox"><input type="checkbox" id="checkbox5" aria-label="Checkbox for following text input" /><label for="checkbox5"></label></div>
+                                    </td>
+                                    <td>SP000</td>
+                                    <td>Delvin Smith</td>
+                                    <td>1 Pesanan / 16 jam</td>
+                                    <td>L1184WN</td>
+                                    <td class="d-flex mx-1">
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang.png" alt=""></div>
+                                        <div class="img-bintang-table"><img src="../assets/img/icons/bintang_kosong.png" alt=""></div>
+                                    </td>
+                                    <td><span class="aktif">Aktif</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN -->
+
+        <!-- MODAL -->
+
+        <!-- Form Modal Hapus, Sunting, Lihat -->
+        <div class="from-modal collapse" id="multiCollapseExample">
+            <div class="row">
+                <div class="tanda-close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="text-from">
+                    <h4>2 data terpilih</h4>
+                </div>
+                <div class="from lihat" data-toggle="modal" data-target="#modalLihatSopir"><span class="img-from"><img src="../assets/img/icons/lihat.png" alt=""></span>
+                    <h4>Lihat</h4>
+                </div>
+                <div class="from sunting" data-toggle="modal" data-target="#modalSuntingSopir"><span class="img-from"><img src="../assets/img/icons/edit.png" alt=""></span>
+                    <h4>Sunting</h4>
+                </div>
+                <div class="from hapus" data-toggle="modal" data-target="#multiHapus"><span class="img-from"><img src="../assets/img/icons/hapus.png" alt=""></span>
+                    <h4>Hapus</h4>
+                </div>
+            </div>
+        </div>
+        <div class="from-modal collapse" id="multiCollapseExample1">
+            <div class="row">
+                <div class="tanda-close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="text-from">
+                    <h4>2 data terpilih</h4>
+                </div>
+                <div class="from lihat" data-toggle="modal" data-target="#modalLihatSopir"><span class="img-from"><img src="../assets/img/icons/lihat.png" alt=""></span>
+                    <h4>Lihat</h4>
+                </div>
+                <div class="from sunting" data-toggle="modal" data-target="#modalSuntingSopir"><span class="img-from"><img src="../assets/img/icons/edit.png" alt=""></span>
+                    <h4>Sunting</h4>
+                </div>
+                <div class="from hapus" data-toggle="modal" data-target="#multiHapus"><span class="img-from"><img src="../assets/img/icons/hapus.png" alt=""></span>
+                    <h4>Hapus</h4>
+                </div>
+            </div>
+        </div>
+        <div class="from-modal collapse" id="multiCollapseExample2">
+            <div class="row">
+                <div class="tanda-close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="text-from">
+                    <h4>2 data terpilih</h4>
+                </div>
+                <div class="from lihat" data-toggle="modal" data-target="#modalLihatSopir"><span class="img-from"><img src="../assets/img/icons/lihat.png" alt=""></span>
+                    <h4>Lihat</h4>
+                </div>
+                <div class="from sunting" data-toggle="modal" data-target="#modalSuntingSopir"><span class="img-from"><img src="../assets/img/icons/edit.png" alt=""></span>
+                    <h4>Sunting</h4>
+                </div>
+                <div class="from hapus" data-toggle="modal" data-target="#multiHapus"><span class="img-from"><img src="../assets/img/icons/hapus.png" alt=""></span>
+                    <h4>Hapus</h4>
+                </div>
+            </div>
+        </div>
+        <div class="from-modal collapse" id="multiCollapseExample3">
+            <div class="row">
+                <div class="tanda-close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="text-from">
+                    <h4>2 data terpilih</h4>
+                </div>
+                <div class="from lihat" data-toggle="modal" data-target="#modalLihatSopir"><span class="img-from"><img src="../assets/img/icons/lihat.png" alt=""></span>
+                    <h4>Lihat</h4>
+                </div>
+                <div class="from sunting" data-toggle="modal" data-target="#modalSuntingSopir"><span class="img-from"><img src="../assets/img/icons/edit.png" alt=""></span>
+                    <h4>Sunting</h4>
+                </div>
+                <div class="from hapus" data-toggle="modal" data-target="#multiHapus"><span class="img-from"><img src="../assets/img/icons/hapus.png" alt=""></span>
+                    <h4>Hapus</h4>
+                </div>
+            </div>
+        </div>
+        <div class="from-modal collapse" id="multiCollapseExample4">
+            <div class="row">
+                <div class="tanda-close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="text-from">
+                    <h4>2 data terpilih</h4>
+                </div>
+                <div class="from lihat" data-toggle="modal" data-target="#modalLihatSopir"><span class="img-from"><img src="../assets/img/icons/lihat.png" alt=""></span>
+                    <h4>Lihat</h4>
+                </div>
+                <div class="from sunting" data-toggle="modal" data-target="#modalSuntingSopir"><span class="img-from"><img src="../assets/img/icons/edit.png" alt=""></span>
+                    <h4>Sunting</h4>
+                </div>
+                <div class="from hapus" data-toggle="modal" data-target="#multiHapus"><span class="img-from"><img src="../assets/img/icons/hapus.png" alt=""></span>
+                    <h4>Hapus</h4>
+                </div>
+            </div>
+        </div>
+        <div class="from-modal collapse" id="multiCollapseExample5">
+            <div class="row">
+                <div class="tanda-close">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="text-from">
+                    <h4>2 data terpilih</h4>
+                </div>
+                <div class="from lihat" data-toggle="modal" data-target="#modalLihatSopir"><span class="img-from"><img src="../assets/img/icons/lihat.png" alt=""></span>
+                    <h4>Lihat</h4>
+                </div>
+                <div class="from sunting" data-toggle="modal" data-target="#modalSuntingSopir"><span class="img-from"><img src="../assets/img/icons/edit.png" alt=""></span>
+                    <h4>Sunting</h4>
+                </div>
+                <div class="from hapus" data-toggle="modal" data-target="#multiHapus"><span class="img-from"><img src="../assets/img/icons/hapus.png" alt=""></span>
+                    <h4>Hapus</h4>
+                </div>
+            </div>
+        </div>
+        <!-- END -->
+
+        <!-- Modal Tambah Sopir -->
+        <div class="modal fade" id="modalAddSopir" tabindex="-1" aria-labelledby="modalAddLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content py-4 px-5 border-0">
+                    <h3 class="modal-title px-3" id="modalAddLabel">
+                        Tambah Sopir
+                    </h3>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-6">
+                                    <label for="namaPolisi">NID</label>
+                                    <input type="text" class="form-control" id="namaPolisi" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Status</label>
+                                    <select id="Pilih Status" class="form-control">
+                      <option value="">Pilih Status</option>
+                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-6">
+                                    <label for="namaKendaraan">Nama Sopir</label>
+                                    <input type="text" class="form-control" id="namaKendaraan" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="tglSerah">Nomer Polisi</label>
+                                    <input type="text" class="form-control" id="tglSerah" />
+                                </div>
+                            </div>
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-6">
+                                    <label for="namaKendaraan">Nama Kendaraan</label>
+                                    <input type="text" class="form-control" id="namaKendaraan" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="namaKendaraan">Password</label>
+                                    <input type="text" class="form-control" id="namaKendaraan" />
+                                </div>
+                            </div>
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-6">
+                                    <label for="namaKendaraan">Nomer HP</label>
+                                    <input type="text" class="form-control" id="namaKendaraan" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="px-3">
+                        <button type="button" class="btn btn-submit" data-dismiss="modal">
+                Tambah Sopir
+              </button>
+                        <button type="button" class="btn btn-cancel" data-dismiss="modal">Batal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Sunting Sopir -->
+        <div class="modal fade" id="modalSuntingSopir" tabindex="-1" aria-labelledby="modalAddLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content py-4 px-5 border-0">
+                    <h3 class="modal-title px-3" id="modalAddLabel">
+                        Sunting Sopir
+                    </h3>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-6">
+                                    <label for="namaPolisi">NID</label>
+                                    <input type="text" class="form-control" id="namaPolisi" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Status</label>
+                                    <select id="Pilih Status" class="form-control">
+                      <option value="">Pilih Status</option>
+                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-6">
+                                    <label for="namaKendaraan">Nama Sopir</label>
+                                    <input type="text" class="form-control" id="namaKendaraan" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="tglSerah">Nomer Polisi</label>
+                                    <input type="date" class="form-control" id="tglSerah" />
+                                </div>
+                            </div>
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-6">
+                                    <label for="namaKendaraan">Nama Kendaraan</label>
+                                    <input type="text" class="form-control" id="namaKendaraan" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="namaKendaraan">Password</label>
+                                    <input type="password" class="form-control" id="namaKendaraan" />
+                                </div>
+                            </div>
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-6">
+                                    <label for="namaKendaraan">Nomer HP</label>
+                                    <input type="text" class="form-control" id="namaKendaraan" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="px-3">
+                        <button type="button" class="btn btn-submit" data-dismiss="modal">
+                Sunting Sopir
+              </button>
+                        <button type="button" class="btn btn-cancel" data-dismiss="modal">Batal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Lihat Sopir -->
+        <div class="modal fade" id="modalLihatSopir" tabindex="-1" aria-labelledby="modalAddLihatLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content py-4 px-5 border-0">
+                    <h3 class="modal-title px-3" id="modalAddLabel">
+                        Detail
+                    </h3>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-6">
+                                    <label for="namaPolisi">Kendaraan</label>
+                                    <h5>Toyota New Innova</h5>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Password</label>
+                                    <h5>pjba1234</h5>
+                                </div>
+                            </div>
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-6">
+                                    <label for="namaKendaraan">Nomer Polisi</label>
+                                    <h5>L1184WN</h5>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="tglSerah">Nomor HP</label>
+                                    <h5>082212345678</h5>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="px-3">
+                        <a href="riwayat_pengantaran.html" type="button" class="btn btn-submit">
+                Lihat Riwayat Pengantaran
+                        </a>
+                        <button type="button" class="btn btn-cancel" data-dismiss="modal">Tutup</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Hapus -->
+        <div class="modal fade" id="multiHapus" tabindex="-1" aria-labelledby="modalAddLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content py-4 px-5 border-0">
+                    <div class="modal-body">
+                        <div class="pilihan">
+                            <p>Hapus Data?</p>
+                        </div>
+                        <form action="">
+                            <div class="form-row center">
+                                <div class="form-group mx-1">
+                                    <Button type="button" class="btn btn-primary px-4 px-1" data-dismiss="modal">Hapus</Button>
+                                </div>
+                                <div class="form-group mx-1">
+                                    <Button type="button" class="btn btn-outline-primary px-4 px-1" data-dismiss="modal">Batal</Button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END MODAL -->
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

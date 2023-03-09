@@ -1,0 +1,67 @@
+.sidebar {
+    width: 125px;
+    height: 100%;
+    text-align: center;
+    position: fixed;
+    transition: 0.5s;
+}
+
+.m-top {
+    top: 18%;
+}
+
+.brand__img {
+    width: 80px;
+    z-index: 5;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.8rem;
+    z-index: 99;
+}
+
+.navs {
+    &__list {
+        border-top-right-radius: 150px;
+        padding-top: 5rem;
+        margin-bottom: 0;
+        background: $white;
+        height: calc(100vh - (80px + 2rem));
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-shadow: $box-shadow;
+    }
+    a {
+        display: block;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 30px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: $transition-base;
+        }
+    }
+    .active,
+    a:hover {
+        &::after {
+            content: "";
+            display: block;
+            width: 4px;
+            height: 30px;
+            background-color: $primary;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
+
+.icn_menu {
+    width: 30px;
+    vertical-align: middle;
+    transition: 0.5s;
+}

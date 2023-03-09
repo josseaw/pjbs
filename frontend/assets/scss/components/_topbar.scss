@@ -1,0 +1,66 @@
+.input-group {
+    &--custom {
+        .form-control {
+            border: 0;
+            border-top-left-radius: $border-radius * 5;
+            border-bottom-left-radius: $border-radius * 5;
+            font-size: 14px;
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+    &-append--custom {
+        width: 35px;
+        height: 35px;
+        background: $white;
+        border-top-right-radius: $border-radius * 5;
+        border-bottom-right-radius: $border-radius * 5;
+        padding: 4px;
+        >.btn {
+            width: 100%;
+            height: 100%;
+            padding: 2px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.topbar__search-icn {
+    width: 12px;
+    vertical-align: initial;
+}
+
+.topbar {
+    margin-left: 112px;
+    padding-bottom: 12px;
+    padding-top: 38px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1224px;
+    z-index: 100;
+    background: $light-grey;
+    .date {
+        background: $white;
+        line-height: 35px;
+        border-radius: $border-radius * 5;
+        padding: 0 1.5rem;
+        display: inline-block;
+        span:first-child {
+            margin-right: 2rem;
+        }
+    }
+    .topbar__icn {
+        width: 35px;
+        padding: 5px;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}
+
+.account--toggle {
+    &::after {
+        display: none;
+    }
+}

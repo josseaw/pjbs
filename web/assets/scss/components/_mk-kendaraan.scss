@@ -1,0 +1,491 @@
+main {
+    .content {
+        position: absolute;
+        margin-top: 8.7rem;
+        width: 90%;
+        margin-left: 133px;
+        z-index: -1;
+        .nav-tabs {
+            color: $blue;
+            border-bottom: none;
+            .nav-link {
+                width: 11rem;
+                background: $light-grey-2;
+                border: 1px solid gainsboro;
+                border-bottom: none;
+                border-top-left-radius: $border-radius * 0.8;
+                border-top-right-radius: 0;
+            }
+            .active {
+                background: $white;
+                color: $blue;
+                border: none;
+                font-weight: 600;
+                box-shadow: -1px 0 10px -5px $grey;
+            }
+        }
+        .card {
+            position: relative;
+            border-top-left-radius: 0;
+            .btn-plus {
+                background: $red;
+                color: $white;
+                border-radius: $border-radius * 5;
+                font-size: 14px;
+            }
+            .btn-filter {
+                background: $white;
+                color: $blue;
+                border-radius: $border-radius * 5;
+                border: 1px solid $blue;
+                img {
+                    width: 20px;
+                    margin-top: 3px;
+                }
+            }
+            .input-group {
+                &--custom {
+                    .form-control {
+                        border: 1px solid $grey;
+                        border-right: none;
+                    }
+                }
+                &-append--custom {
+                    width: 35px;
+                    height: 35px;
+                    background: $white;
+                    border-top-right-radius: $border-radius * 5;
+                    border-bottom-right-radius: $border-radius * 5;
+                    border: 1px solid $grey;
+                    border-left: none;
+                    padding: 2px;
+                    >.btn {
+                        width: 100%;
+                        height: 100%;
+                        padding: 2px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+            .topbar__search-icn {
+                width: 13px;
+                vertical-align: initial;
+            }
+            .table {
+                thead {
+                    th {
+                        background: rgba($blue, 0.3);
+                        color: rgba($grey, 0.6);
+                        &:first-child {
+                            border-top-left-radius: $border-radius * 1;
+                            border-bottom-left-radius: $border-radius * 1;
+                        }
+                        &:last-child {
+                            border-top-right-radius: $border-radius * 1;
+                            border-bottom-right-radius: $border-radius * 1;
+                        }
+                        .btn-minus {
+                            background: $blue;
+                            color: $white;
+                            width: 30px;
+                            height: 30px;
+                            padding: 0;
+                            font-weight: 900;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        color: $dark-grey2;
+                        &:nth-child(odd) {
+                            background: $white;
+                        }
+                        &:nth-child(even) {
+                            background: rgba($blue, 0.1);
+                        }
+                        td {
+                            a {
+                                text-decoration: none;
+                                color: $dark-grey2;
+                            }
+                            vertical-align: middle;
+                            .img-bintang-table {
+                                position: relative;
+                                width: 30px;
+                                height: 30px;
+                                img {
+                                    position: absolute;
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            }
+                            .table-centang {
+                                position: relative;
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                border: 2px solid $blue;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                cursor: pointer;
+                                span {
+                                    position: relative;
+                                    width: 15px;
+                                    height: 2px;
+                                    background: $white;
+                                    transform: rotate(45deg);
+                                    left: 3px;
+                                    top: 3px;
+                                    &:last-child {
+                                        width: 25px;
+                                        height: 2px;
+                                        transform: rotate(-40deg);
+                                        top: 1px;
+                                        left: -4px;
+                                    }
+                                }
+                            }
+                            .table-close {
+                                position: relative;
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                border: 2px solid $blue;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-direction: column;
+                                cursor: pointer;
+                                span {
+                                    position: relative;
+                                    width: 25px;
+                                    height: 2px;
+                                    background: $blue;
+                                    transform: rotate(45deg);
+                                    top: 1px;
+                                    &:last-child {
+                                        transform: rotate(-40deg);
+                                        top: -1px;
+                                        right: -1px;
+                                    }
+                                }
+                            }
+                            .aktif,
+                            .nonaktif,
+                            .tersedia,
+                            .tidaktersedia,
+                            .aktif-setuju,
+                            .menunggu {
+                                color: $white;
+                                border-radius: $border-radius * 0.5;
+                                padding: 2px 14px;
+                                cursor: pointer;
+                            }
+                            .tersedia {
+                                padding: 2px 42px;
+                                background: #fe0000
+                            }
+
+                            .tidaktersedia {
+                                padding: 2px 20px;
+                                background: #707070
+                            }
+                            .aktif {
+                                padding: 2px 35px;
+                                background: $red;
+                            }
+                            .nonaktif {
+                                padding: 2px 20px;
+                                background: $grey;
+                            }
+                            .aktif-setuju {
+                                padding: 2px 30px;
+                                background: $green;
+                            }
+                            .menunggu {
+                                padding: 2px 20px;
+                                background: #ffa500;
+                            }
+                            &:first-child {
+                                border-top-left-radius: $border-radius * 1;
+                                border-bottom-left-radius: $border-radius * 1;
+                            }
+                            &:last-child {
+                                border-top-right-radius: $border-radius * 1;
+                                border-bottom-right-radius: $border-radius * 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal-content {
+        border-radius: $border-radius * 4.5;
+        .modal-title {
+            &::after {
+                content: "";
+                position: relative;
+                background: rgba($grey, 0.59);
+                width: 100%;
+                height: 1px;
+                display: block;
+                margin-top: 5px;
+            }
+        }
+        .btn-submit {
+            background: $blue;
+            color: $white;
+            width: 60%;
+        }
+        .btn-cancel {
+            background: $white;
+            color: $blue;
+            border: 1px solid $blue;
+            width: 38%;
+        }
+        input,
+        select {
+            border: 1px solid rgba($grey, 0.59);
+        }
+    }
+}
+
+.column-y {
+    display: flex;
+    flex-direction: column;
+}
+
+#tambah-tujuan {
+    position: absolute;
+    padding: 3px 10px;
+    background: $blue;
+    bottom: -30px;
+    right: 5px;
+    cursor: pointer;
+    color: $white;
+    font-size: 12px;
+    border-radius: 7px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.center-pengguna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.m-pengguna {
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+
+.btn-jos {
+    padding: 5px 60px 5px 60px;
+    border-radius: 20px;
+}
+
+.btn-yes {
+    padding: 5px 98px 5px 98px;
+    border-radius: 20px;
+}
+
+.outline-blue {
+    border: 1px solid $blue;
+}
+
+.tambah-minus {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+.f3 {
+    margin-right: 20px;
+}
+
+.f4 {
+    margin-left: 20px;
+}
+
+.input-pengguna {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid $grey;
+    margin-top: -4px;
+}
+
+@media only screen and (max-width: 1325px) {
+    main {
+        .content {
+            width: 85%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1195px) {
+    main {
+        .content {
+            margin-top: 9rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 884px) {
+    main {
+        .content {
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (max-width: 662px) {
+    main {
+        .content {
+            width: 73%;
+        }
+    }
+}
+
+@media only screen and (max-width: 609px) {
+    main {
+        .content {
+            margin-top: 12rem;
+        }
+    }
+}
+
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu.jos {
+    max-width: 300px;
+    height: 320px;
+    position: relative;
+}
+
+.dropdown-item-text.text-center {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    z-index: 99;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    span {
+        position: relative;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: $red;
+        color: $white;
+        margin-top: -2px;
+        margin-left: 20px;
+    }
+}
+
+.dropdown-line {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background: $grey;
+}
+
+.dropdown-list {
+    max-width: 300px;
+    height: 275px;
+    .scroll {
+        height: 100%;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        a {
+            text-decoration: none;
+            .list-drop {
+                display: flex;
+                flex-wrap: wrap;
+                border-bottom: .5px solid rgba($dark-grey2, 0.6);
+                border-top: .5px solid rgba($dark-grey2, 0.6);
+                padding-bottom: -5px;
+                .img-notifikasi {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                    margin-top: 18px;
+                    img {
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .content-notifikasi {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 210px;
+                    margin-left: 10px;
+                    p {
+                        font-size: 12px;
+                        color: $dark-grey2;
+                        margin-top: 13px;
+                        &:last-child {
+                            font-size: 9px;
+                            position: relative;
+                            margin-left: auto;
+                            margin-right: 10px;
+                            margin-top: -8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.list-filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.p-800 {
+    padding-left: 800px;
+}
+
+.p-900 {
+    padding-left: 900px;
+}
+
+.bg-blue-rgba {
+     background: rgb(229 236 243)
+}

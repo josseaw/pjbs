@@ -1,0 +1,62 @@
+$blue: #014188;
+$dark-blue: #022a55;
+$red: #fe0000;
+$dark-red: #a80707;
+$grey: #707070;
+$light-grey: #eaeaea;
+$light-grey-2: #f3f3f3;
+$dark-grey: #3a3939;
+$dark-grey2: #453823;
+$green: #31d136;
+$white: #fff;
+$gold: #938e87;
+$orange:#FF9F1C;
+// Body setting
+$body-bg: $light-grey;
+$body-color: $dark-grey2;
+// Common component setting
+$border-radius: 0.5rem;
+$border-color: $gold;
+$box-shadow: 0 3px 10px rgba($blue, 0.05);
+$transition-base: all 0.3s ease-in-out;
+// Typography
+$font-family-sans-serif: "Roboto",
+sans-serif;
+// Form
+$input-border-color: $gold;
+$input-placeholder-color: $blue;
+.bg-v-blue {
+    background: $blue;
+}
+
+.bg-v-orange {
+    background: $orange;
+}
+
+.bg-orange-o {
+    background: rgba($orange, 0.5);
+}
+
+.bg-blue-o {
+    background: rgba($blue, 0.5);
+}
+
+.bg-blue {
+    background: rgba($blue, 0.7);
+}
+
+.bg-blue-asli {
+    background: $blue;
+}
+
+.bg-red {
+    background: $red;
+}
+
+.bg-rgba-grey {
+    background: rgba($grey, 0.1);
+}
+
+.text-dark-grey2 {
+    color: $dark-grey2;
+}

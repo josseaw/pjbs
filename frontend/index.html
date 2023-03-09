@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>PJBS Web App</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+
+    <!-- custom style for login page only -->
+    <style>
+        body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .login__img {
+            height: 100vh;
+            object-fit: cover;
+        }
+        
+        .login__form {
+            width: 400px;
+            padding: 0 3rem;
+        }
+        
+        .login__form-title {
+            color: #014188;
+            font-weight: bold;
+            margin-bottom: 1.25rem;
+        }
+        
+        .btn__login {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.375rem 1rem 0.375rem 1.6rem;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        
+        .btn__login img {
+            display: inline-block;
+            width: 40px;
+            opacity: 0.5;
+        }
+        
+        .brand {
+            position: absolute;
+            right: 2.5rem;
+            top: 1.5rem;
+            width: 110px;
+            height: auto;
+        }
+        
+        .form-control {
+            background: #dadee4;
+        }
+        
+        .form-control::placeholder {
+            padding-left: 15px;
+        }
+        
+        @media screen and (max-width: 767px) {
+            .login__form {
+                width: 100%;
+                padding: 0 2rem;
+            }
+            .brand {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin: 1rem auto 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid px-0">
+        <div class="row no-gutters align-items-center">
+            <img src="assets/img/logo pjbs.png" alt="logo PJBS" class="brand" />
+            <div class="col-md-5 d-none d-md-block">
+                <img src="assets/img/bg_login.jpg" alt="Background" class="img-fluid login__img" />
+            </div>
+            <div class="col-md-7">
+                <form action="mk_kendaraan.html" class="login__form">
+                    <h3 class="login__form-title">Masuk</h3>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="ID" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Kata Sandi" />
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn__login">
+                Masuk <img src="assets/img/icons/icn_longarrow-right.svg" />
+              </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

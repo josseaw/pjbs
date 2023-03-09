@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>PJBS Web App | Kendaraan</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+</head>
+
+<body>
+    <main>
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+            <img src="assets/img/logo pjbs.png" alt="logo PJBS" class="brand__img" />
+            <nav class="navs">
+                <ul class="navs__list list-unstyled">
+                    <li class="navs__list-item">
+                        <a href="mk_kendaraan.html" class="active" data-toggle="tooltip" data-placement="bottom" title="Modul Kendaraan"><img src="assets/img/icons/kendaraan_biru.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="mr_rapat.html"><img src="assets/img/icons/pemesanan_ruangan_rapat.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="matk_atk.html"><img src="assets/img/icons/atk.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="mf_fasilitas.html"><img src="assets/img/icons/perbaikan_fasilitas.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="mars_arsip.html"><img src="assets/img/icons/arsip.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="minv_inventaris.html"><img src="assets/img/icons/inventaris.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="ms_survey.html"><img src="assets/img/icons/survey.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="mem_meeting.html"><img src="assets/img/icons/e-meeting.png" class="icn_menu" /></a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- END SIDEBAR -->
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <form class="d-inline-block ml-0 ml-xl-4 mr-3">
+                            <div class="input-group input-group--custom">
+                                <input type="text" class="form-control" placeholder="Cari..." />
+                                <div class="input-group-append--custom mb-3">
+                                    <button class="btn btn-primary" type="button">
+                                        <img src="assets/img/icons/search_putih.png" class="topbar__search-icn" />
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="date mb-3">
+                            <p class="mb-0 small">
+                                <span>11:46 WIB </span> <span>17 Sept 2020</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 text-md-right ml-4 ml-md-0">
+                        <div class="d-flex">
+                            <div class="d-flex ml-auto">
+                                <div class="btn-group ml-auto">
+                                    <a type="button" class="topbar__icn" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="7,7">
+                                        <img src="assets/img/icons/notifikasi.png" class="img-fluid" />
+                                    </a>
+                                    <div class="dropdown-menu jos" aria-labelledby="dropdownMenuReference">
+                                        <span class="dropdown-item-text text-center">Notifikasi <span>2</span></span>
+                                        <div class="dropdown-line"></div>
+                                        <div class="dropdown-list">
+                                            <div class="scroll">
+                                                <a href="#">
+                                                    <div class="list-drop bg-blue-rgba">
+                                                        <div class="img-notifikasi bg-white">
+                                                            <img src="assets/img/icons/jadawal-list.png" alt="">
+                                                        </div>
+                                                        <div class="content-notifikasi">
+                                                            <p>Pemesanan kendaraan menunggu persetujuan anda</p>
+                                                            <p>14:00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="list-drop bg-blue-rgba">
+                                                        <div class="img-notifikasi bg-white">
+                                                            <img src="assets/img/icons/notif_user_biru.png" alt="">
+                                                        </div>
+                                                        <div class="content-notifikasi">
+                                                            <p>Pemesanan kendaraan menunggu persetujuan anda</p>
+                                                            <p>14:00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="list-drop bg-white">
+                                                        <div class="img-notifikasi bg-blue-asli">
+                                                            <img src="assets/img/icons/notif_approval.png" alt="">
+                                                        </div>
+                                                        <div class="content-notifikasi">
+                                                            <p>Pemesanan kendaraan menunggu persetujuan anda</p>
+                                                            <p>14:00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="list-drop bg-white">
+                                                        <div class="img-notifikasi bg-blue-asli">
+                                                            <img src="assets/img/icons/notif_user.png" alt="">
+                                                        </div>
+                                                        <div class="content-notifikasi">
+                                                            <p>Pemesanan kendaraan menunggu persetujuan anda</p>
+                                                            <p>14:00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group">
+                                    <span type="button" class="dropdown-toggle account--toggle" id="dropdownMenuProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="7,7">
+                                        <img src="https://placeimg.com/35/35/people" class="rounded-circle" />
+                                    </span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END TOPBAR -->
+
+        <!-- MAIN -->
+        <div class="content">
+            <div class="col-12">
+                <div class="board">
+                    <div class="d-flex flex-row">
+                        <div class="pemesanan-kendaraan m-w-782 bg-white">
+                            <p class="text-dark-grey2">Pemesanan Kendaraan</p>
+                            <div class="graphic" id="pemesanan">
+
+                            </div>
+                            <a href="">Lihat data pemesanan ></a>
+                        </div>
+                        <div class="pemesanan-kendaraan m-w-315 m-20 bg-gradient-blue">
+                            <p class="text-white">Pelayanan Sopir</p>
+                            <div id="pelayanan">
+                            </div>
+                            <a href="" class="text-white">Lihat data sopir ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/apexcharts.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

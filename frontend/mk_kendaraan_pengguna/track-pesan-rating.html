@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>PJBS Web App | Kendaraan</title>
+
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.min.css" />
+</head>
+
+<body>
+    <main>
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+            <img src="../assets/img/logo pjbs.png" alt="logo PJBS" class="brand__img" />
+            <nav class="navs">
+                <ul class="navs__list list-unstyled">
+                    <li class="navs__list-item">
+                        <a href="../mk_kendaraan_pengguna.html" class="active" data-toggle="tooltip" data-placement="bottom" title="Modul Kendaraan"><img src="../assets/img/icons/kendaraan_biru.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../mr_rapat_pengguna.html"><img src="../assets/img/icons/pemesanan_ruangan_rapat.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../matk_atk_pengguna.html"><img src="../assets/img/icons/atk.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../mf_fasilitas_pengguna.html"><img src="../assets/img/icons/perbaikan_fasilitas.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../mars_arsip_pengguna.html"><img src="../assets/img/icons/arsip.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../minv_inventaris_pengguna.html"><img src="../assets/img/icons/inventaris.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../ms_survey_pengguna.html"><img src="../assets/img/icons/survey.png" class="icn_menu" /></a>
+                    </li>
+                    <li class="navs__list-item">
+                        <a href="../mem_meeting_pengguna.html"><img src="../assets/img/icons/e-meeting.png" class="icn_menu" /></a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- END SIDEBAR -->
+
+        <!-- TOPBAR -->
+        <div class="topbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <form class="d-inline-block ml-0 ml-xl-4 mr-3">
+                            <div class="input-group input-group--custom">
+                                <input type="text" class="form-control" placeholder="Cari..." />
+                                <div class="input-group-append--custom mb-3">
+                                    <button class="btn btn-primary" type="button">
+                      <img
+                        src="../assets/img/icons/search_putih.png"
+                        class="topbar__search-icn"
+                      />
+                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="date mb-3">
+                            <p class="mb-0 small">
+                                <span>11:46 WIB </span> <span>17 Sept 2020</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 text-md-right ml-4 ml-md-0">
+                        <div class="d-flex">
+                            <div class="d-flex ml-auto">
+                                <div class="btn-group ml-auto">
+                                    <a type="button" class="topbar__icn" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="7,7">
+                                        <img src="../assets/img/icons/notifikasi.png" class="img-fluid" />
+                                    </a>
+                                    <div class="dropdown-menu jos" aria-labelledby="dropdownMenuReference">
+                                        <span class="dropdown-item-text text-center">Notifikasi <span>2</span></span>
+                                        <div class="dropdown-line"></div>
+                                        <div class="dropdown-list">
+                                            <div class="scroll">
+                                                <a href="#">
+                                                    <div class="list-drop bg-blue-rgba">
+                                                        <div class="img-notifikasi bg-white">
+                                                            <img src="../assets/img/icons/jadawal-list.png" alt="">
+                                                        </div>
+                                                        <div class="content-notifikasi">
+                                                            <p>Pemesanan kendaraan menunggu persetujuan anda</p>
+                                                            <p>14:00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="list-drop bg-blue-rgba">
+                                                        <div class="img-notifikasi bg-white">
+                                                            <img src="../assets/img/icons/notif_user_biru.png" alt="">
+                                                        </div>
+                                                        <div class="content-notifikasi">
+                                                            <p>Pemesanan kendaraan menunggu persetujuan anda</p>
+                                                            <p>14:00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="list-drop bg-white">
+                                                        <div class="img-notifikasi bg-blue-asli">
+                                                            <img src="../assets/img/icons/notif_approval.png" alt="">
+                                                        </div>
+                                                        <div class="content-notifikasi">
+                                                            <p>Pemesanan kendaraan menunggu persetujuan anda</p>
+                                                            <p>14:00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="list-drop bg-white">
+                                                        <div class="img-notifikasi bg-blue-asli">
+                                                            <img src="../assets/img/icons/notif_user.png" alt="">
+                                                        </div>
+                                                        <div class="content-notifikasi">
+                                                            <p>Pemesanan kendaraan menunggu persetujuan anda</p>
+                                                            <p>14:00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group ml-auto">
+                                    <span type="button" class="dropdown-toggle account--toggle" id="dropdownMenuProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="7,7">
+                                        <img src="https://placeimg.com/35/35/people" class="rounded-circle" />
+                                    </span>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuProfile">
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Separated link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END TOPBAR -->
+
+        <!-- MAIN -->
+        <div class="content">
+            <div class="col-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link text-center active" href="../mk_kendaraan_pengguna.html">Pesan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-center " href="riwayat.html">Riwayat</a>
+                    </li>
+                </ul>
+                <div class="card border-0 w-100">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="track-sopir1">
+                                <div class="img-full">
+                                    <!-- Tempat Peta -->
+
+                                    <a href="">
+                                        <img src="../assets/img/icons/full-screen.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 px-3 py-5">
+                            <div class="sopir-track">
+                                <div class="profil">
+                                    <div class="img-profil1">
+                                        <img src="../assets/img/icons/testimonial-02.png" alt="">
+                                    </div>
+                                    <div class="text-profil">
+                                        <h4>Delvin Smith</h4>
+                                        <h4>sp000</h4>
+                                    </div>
+                                </div>
+                                <div class="tujuan">
+                                    <div class="pengguna-tujuan">
+                                        <h4>Pengguna</h4>
+                                        <h4>Karina Kusumadewi</h4>
+                                    </div>
+                                    <div class="pengguna-tujuan">
+                                        <h4>Tujuan</h4>
+                                        <h4>Kantor BPKB</h4>
+                                    </div>
+                                </div>
+                                <div class="waktu">
+                                    <div class="span">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div class="flex-column">
+                                        <div class="waktu-BerangkatKembali">
+                                            <span>
+                                                <h4>08:00</h4>
+                                                <p>WIB</p>
+                                            </span>
+                                            <span>
+                                                <h5>20 September 2019</h5>
+                                            </span>
+                                        </div>
+                                        <div class="waktu-BerangkatKembali">
+                                            <span>
+                                                <h4>08:00</h4>
+                                                <p>WIB</p>
+                                            </span>
+                                            <span>
+                                                <h5>20 September 2019</h5>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="line-coklat"></div>
+                                <form action="">
+                                    <div class="penilaian-komentar">
+                                        <div class="penilaian">
+                                            <p>Penilaian</p>
+                                            <div class="jos">
+                                                <div class="img-bintang mx-1">
+                                                    <img src="../assets/img/icons/bintang.png" alt="">
+                                                </div>
+                                                <div class="img-bintang mx-1">
+                                                    <img src="../assets/img/icons/bintang.png" alt="">
+                                                </div>
+                                                <div class="img-bintang mx-1">
+                                                    <img src="../assets/img/icons/bintang.png" alt="">
+                                                </div>
+                                                <div class="img-bintang mx-1">
+                                                    <img src="../assets/img/icons/bintang.png" alt="">
+                                                </div>
+                                                <div class="img-bintang mx-1">
+                                                    <img src="../assets/img/icons/bintang_kosong.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="penilaian my-2">
+                                            <p>Komentar</p>
+                                            <textarea name="" id="" cols="41" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="center-pengguna m-track">
+                                        <button class="btn-jos btn btn-primary" type="submit">Kirim Penilaian</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MAIN -->
+
+        <!-- MODAL -->
+        <!-- Modal Unduh Persetujuan-->
+        <div class="modal fade" id="modalUnduhPersetujuan" tabindex="-1" aria-labelledby="modalAddLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content py-4 px-5 border-0">
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-row center">
+                                <div class="row">
+                                    <div class="form-group mx-1">
+                                        <Button type="button" class="btn btn-danger px-4 px-1" data-dismiss="modal">PDF</Button>
+                                    </div>
+                                    <div class="form-group mx-1">
+                                        <Button type="button" class="btn btn-success px-4 px-1" data-dismiss="modal">Excel</Button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Unduh Riwayat Pemesanan -->
+        <div class="modal fade" id="modalUnduhRiwayatPemesanan" tabindex="-1" aria-labelledby="modalAddLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content py-4 px-5 border-0">
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-row center">
+                                <div class="form-group mx-1">
+                                    <Button type="button" class="btn btn-danger px-4 px-1" data-dismiss="modal">PDF</Button>
+                                </div>
+                                <div class="form-group mx-1">
+                                    <Button type="button" class="btn btn-success px-4 px-1" data-dismiss="modal">Excel</Button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Lihat Persetujuan -->
+        <div class="modal fade" id="modalLihatPersetujuan" tabindex="-1" aria-labelledby="modalAddLihatLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content py-4 px-5 border-0">
+                    <h3 class="modal-title px-3" id="modalAddLabel">
+                        Detail Pengajuan
+                    </h3>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-12">
+                                    <label for="namaPolisi" class="font-weight-bold">Kendaraan</label>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed corporis nobis iusto atque sapiente fugiat molestiae aspernatur deserunt consequuntur explicabo, commodi rerum minus odio necessitatibus, repudiandae nihil
+                                        aperiam. Vero, laudantium!</p>
+                                </div>
+                            </div>
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-12">
+                                    <label for="namaKendaraan" class="font-weight-bold">Nomer Polisi</label>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quaerat tempora, laudantium ipsum nam dicta id architecto. Cumque iusto sit velit, eveniet, quo eaque, blanditiis veritatis dicta facilis possimus officia!</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="px-3">
+                        <a href="disetujui_pilih_sopir.html" class="btn btn-submit">
+                            Setujui
+                        </a>
+                        <button type="button" class="btn btn-cancel" data-dismiss="modal" data-toggle="modal" data-target="#modalSuntingPersetujuan">Tolak</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Sunting Persetujuan -->
+        <div class="modal fade" id="modalSuntingPersetujuan" tabindex="-1" aria-labelledby="modalAddLihatLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content py-4 px-5 border-0">
+                    <h3 class="modal-title px-3" id="modalAddLabel">
+                        Tolak Pengajuan
+                    </h3>
+                    <div class="modal-body">
+                        <form action="">
+                            <div class="form-row my-2">
+                                <div class="form-group col-md-12">
+                                    <label for="namaPolisi">Catatan</label>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <textarea name="" id="" cols="80" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="px-3">
+                        <a href="" class="btn btn-submit">
+                            Tolak Pengajuan
+                        </a>
+                        <button type="button" class="btn btn-cancel" data-dismiss="modal">Batal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- END MODAL -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
